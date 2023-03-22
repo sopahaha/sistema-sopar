@@ -1,6 +1,6 @@
-// import * as THREE from 'three'
+import * as THREE from 'three'
 
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { OrbitControls } from 'OrbitControls'
 // import { degToRad, radToDeg } from 'three/src/math/MathUtils'
 
 let G = 1
@@ -150,5 +150,5 @@ function animate() {
     renderer.render(scene, camera)
 }
 
-// const controls = new OrbitControls(camera, renderer.domElement)
+const controls = new OrbitControls(camera, renderer.domElement)
 animate()

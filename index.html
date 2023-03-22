@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema do sopa</title>
     <link rel="stylesheet" href="style.css">
-    <script src="three.min.js"></script>
+    <script type="importmap">
+      {
+        "imports":{
+          "three":"https://unpkg.com/three@0.150.1/build/three.module.js",
+          "OrbitControls":"https://unpkg.com/three@0.150.1/examples/jsm/controls/OrbitControls.js"
+        }
+      }
+    </script>
+    <script src="main.js" type="module" defer></script>
   </head>
   <body>
     <canvas id="bg"></canvas>
   </body>
-  <script src="main.js" type="module"></script>
 </html>
